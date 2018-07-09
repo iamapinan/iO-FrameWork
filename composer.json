@@ -15,7 +15,7 @@
     "require": {
         "php": ">=7.0",
         "catfan/Medoo": "1.5.6",
-        "nezamy/route": "1.2.2",
+        "nezamy/route": "^1.2.2",
         "gilbitron/easycsrf": "1.0.1",
         "vlucas/phpdotenv": "2.4.0",
         "robmorgan/phinx": "0.10.3",
