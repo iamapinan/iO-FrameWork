@@ -1,5 +1,5 @@
 <?php 
-namespace IO\Framework\CLI;
+namespace iOTech\IOFramework\CLI;
 
 class CacheCLI {
     public function clear($menu = null) {

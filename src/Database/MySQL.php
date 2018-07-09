@@ -1,5 +1,5 @@
 <?php
-namespace IO\Framework\Database;
+namespace iOTech\IOFramework\Database;
 use Medoo\Medoo;
 
 class MySQL {
