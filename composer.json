@@ -1,0 +1,36 @@
+{
+    "name": "iotech/ioframework",
+    "description": "Easy to use PHP Framework MVC Model",
+    "type": "library",
+    "keywords": [
+        "PHP Framework",
+        "mvc",
+        "framework",
+        "laravel",
+        "io",
+        "iotech",
+        "easy php"
+    ],
+    "homepage": "http://iotech.co.th/iOFramework",
+    "require": {
+        "catfan/medoo": "1.5.6",
+        "nezamy/route": "1.2.2",
+        "gilbitron/easycsrf": "1.0.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "iOTech Enterprise",
+            "email": "developer@iotech.co.th"
+        },
+        {
+            "name": "Apinan Woratrakun",
+            "email": "apinan@iotech.co.th",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "support": {
+        "email": "developer@iotech.co.th"
+    }
+}
