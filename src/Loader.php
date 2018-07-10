@@ -37,9 +37,14 @@ class Loader {
 
     public static function version($int = false) {
 
-        exec('git rev-list HEAD | wc -l', $version_number);
-        
-        $current_version = trim($version_number[0]);
+        if(!file_exists(__DIR__ . '/.version')) {
+            exec('git rev-list HEAD | wc -l', $version_number);
+            file_put_contents(__DIR__ . '/.version', $version_number);
+        } else {
+            $version_number = file_get_contents(__DIR__ . '/.version');
+        }
+
+        $current_version = trim($version_number);
         $div = (self::$versioncontrol == 'alpha' || self::$versioncontrol == 'beta') ? 1000 : 100; 
 
         if($int == false) {
