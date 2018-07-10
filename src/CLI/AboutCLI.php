@@ -1,5 +1,5 @@
 <?php 
-namespace iOTech\IOFramework\CLI;
+namespace IOFramework\CLI;
 
 class AboutCLI {
     protected $credit;

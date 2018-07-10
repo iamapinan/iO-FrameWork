@@ -1,5 +1,5 @@
 <?php
-namespace iOTech\IOFramework;
+namespace IOFramework;
 
 class Loader {
 

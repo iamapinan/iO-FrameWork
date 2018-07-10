@@ -1,7 +1,7 @@
 <?php
 use Dwoo\Core;
 use Jenssegers\Blade\Blade;
-use iOTech\IOFramework\Loader;
+use IOFramework\Loader;
 
 function get_constant($n) {
     require ( BASE_PATH . 'app/configs/Constants.php' );

@@ -1,7 +1,7 @@
 {
     "name": "iotech/ioframework",
     "description": "Easy to use PHP Framework MVC Model",
-    "type": "library",
+    "type": "framework",
     "keywords": [
         "PHP Framework",
         "mvc",
