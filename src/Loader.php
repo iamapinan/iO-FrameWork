@@ -5,7 +5,11 @@ class Loader {
 
     protected $fnc;
     protected $cont;
-    protected static $versioncontrol = 'alpha';
+
+    protected static $version = [
+        "type" => "alpha",
+        "number" => "0.2.1"
+    ];
 
     function __construct() {
         /**
@@ -37,26 +41,14 @@ class Loader {
 
     public static function version($int = false) {
 
-        if(!file_exists(__DIR__ . '/.version')) {
-            exec('git rev-list HEAD | wc -l', $version_number);
-            file_put_contents(__DIR__ . '/.version', $version_number);
-        } else {
-            $version_number = file_get_contents(__DIR__ . '/.version');
-        }
-
-        $current_version = trim($version_number);
-        $div = (self::$versioncontrol == 'alpha' || self::$versioncontrol == 'beta') ? 1000 : 100; 
-
         if($int == false) {
-            $new_version = substr($current_version/$div, 0, 4);
-            $version['text'] = $new_version . ' ' . self::$versioncontrol;
-            $version['number'] = $new_version;
-            $version['type'] = self::$versioncontrol;
+            $vs['type'] = self::$version;
+            $vs['text'] = self::$version['number'] . '-' . self::$version['type'];
         } else {
-            $version = substr($current_version/$div, 0, 4);
+            $vs = self::$version['number'];
         }
 
-        return $version;
+        return $vs;
     }
     
     /**
