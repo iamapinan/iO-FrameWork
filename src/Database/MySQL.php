@@ -11,6 +11,7 @@ class MySQL {
             'server' => getenv('mysql_host'),
             'username' => getenv('mysql_user'),
             'password' => getenv('mysql_password'),
+            'port' => getenv('mysql_port'),
             'charset' => 'utf8'
         ]);
     }
