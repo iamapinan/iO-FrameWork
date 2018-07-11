@@ -18,7 +18,6 @@
         "nezamy/route": "^1.2.2",
         "gilbitron/easycsrf": "1.0.1",
         "vlucas/phpdotenv": "2.4.0",
-        "doctrine/migrations": "^1.7.2",
         "phpunit/phpunit": "6.5.5",
         "php-school/cli-menu": "2.1.0",
         "jenssegers/blade": "1.1.0"
