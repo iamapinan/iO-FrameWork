@@ -11,7 +11,7 @@ function get_constant($n) {
 function page_render($view, $params = []) {
     $template = new Blade(getconst('template_dir'), getconst('template_cache'));
     $params['framework_version'] = Loader::version();
-    return $template->make($view, $params);
+    echo $template->make($view, $params);
 }
 
 function get_system_version_number() {
@@ -49,7 +49,7 @@ function register_func_alias($target, $original) {
 function to_json_respose($data = [], $return_code = 200) {
     header('Content-Type: application/json');
     http_response_code($return_code);
-    return json_encode($data);
+    echo json_encode($data);
 } 
 
 function array_unset_recursive(&$array, $remove) {
